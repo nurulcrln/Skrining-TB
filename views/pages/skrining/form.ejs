@@ -1,0 +1,407 @@
+<%- include('../../master/header') %>
+<%- include('../../master/navbar') %>
+<div class="top">
+    <h1 id="header-user">Skrining TB</h1>
+    <form action="/skriningform" method="post">
+        <div class="form-group">
+            <div class="container user-skrining p-5 my-5 shadow-sm">
+                <div class=" mt-2 p-4 text-black rounded">
+                    <div class="row mb-3 mt-3">
+                        <p class="col-form-label">1. Apakah Anda mengalami batuk selama lebih dari 2 minggu?</p>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p1" id="p1-1" value="0" required>
+                            <label class="form-check-label" for="p1-1">Tidak</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p1" id="p1-2" value="0.2" required >
+                            <label class="form-check-label" for="p1-2">Tidak tahu</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p1" id="p1-3" value="0.4" required>
+                            <label class="form-check-label" for="p1-3">Mungkin</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p1" id="p1-4"  value="0.6" required>
+                            <label class="form-check-label" for="p1-4">Kemungkinan Besar</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p1" id="p1-5" value="0.8" required>
+                            <label class="form-check-label" for="p1-5">Hampir pasti</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p1"  id="p1-6" value="1" required>
+                            <label class="form-check-label" for="p1-6">Pasti</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="container user-skrining p-5 my-5 shadow-sm">
+                <div class=" mt-2 p-4 text-black rounded">
+                    <div class="row mb-3 mt-3">
+                        <p class="col-form-label">2. Apakah Anda mengalami Batuk Berdarah?</p>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p2" id="p2-1" value="0" required>
+                            <label class="form-check-label" for="p2-1">Tidak</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p2" id="p2-2" value="0.2" required >
+                            <label class="form-check-label" for="p2-2">Tidak tahu</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p2" id="p2-3" value="0.4" required>
+                            <label class="form-check-label" for="p2-3">Mungkin</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p2" id="p2-4"  value="0.6" required>
+                            <label class="form-check-label" for="p2-4">Kemungkinan Besar</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p2" id="p2-5" value="0.8" required>
+                            <label class="form-check-label" for="p2-5">Hampir pasti</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p2"  id="p2-6" value="1" required>
+                            <label class="form-check-label" for="p2-6">Pasti</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="container user-skrining p-5 my-5 shadow-sm">
+                <div class=" mt-2 p-4 text-black rounded">
+                    <div class="row mb-3 mt-3">
+                        <p class="col-form-label">3. Apakah Anda mengalami Demam ?</p>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p3" id="p3-1" value="0" required>
+                            <label class="form-check-label" for="p3-1">Tidak</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p3" id="p3-2" value="0.2" required >
+                            <label class="form-check-label" for="p3-2">Tidak tahu</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p3" id="p3-3" value="0.4" required>
+                            <label class="form-check-label" for="p3-3">Mungkin</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p3" id="p3-4"  value="0.6" required>
+                            <label class="form-check-label" for="p3-4">Kemungkinan Besar</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p3" id="p3-5" value="0.8" required>
+                            <label class="form-check-label" for="p3-5">Hampir pasti</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p3"  id="p3-6" value="1" required>
+                            <label class="form-check-label" for="p3-6">Pasti</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="container user-skrining p-5 my-5 shadow-sm">
+                <div class=" mt-2 p-4 text-black rounded">
+                    <div class="row mb-3 mt-3">
+                        <p class="col-form-label">4. Apakah Anda mengalami Penurunan Berat Badan ?</p>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p4" id="p4-1" value="0" required>
+                            <label class="form-check-label" for="p4-1">Tidak</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p4" id="p4-2" value="0.2" required >
+                            <label class="form-check-label" for="p4-2">Tidak tahu</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p4" id="p4-3" value="0.4" required>
+                            <label class="form-check-label" for="p4-3">Mungkin</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p4" id="p4-4"  value="0.6" required>
+                            <label class="form-check-label" for="p4-4">Kemungkinan Besar</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p4" id="p4-5" value="0.8" required>
+                            <label class="form-check-label" for="p4-5">Hampir pasti</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p4"  id="p4-6" value="1" required>
+                            <label class="form-check-label" for="p4-6">Pasti</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="container user-skrining p-5 my-5 shadow-sm">
+                <div class=" mt-2 p-4 text-black rounded">
+                    <div class="row mb-3 mt-3">
+                        <p class="col-form-label">5. Apakah Anda merasa Sering Kelelahan?</p>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p5" id="p5-1" value="0" required>
+                            <label class="form-check-label" for="p5-1">Tidak</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p5" id="p5-2" value="0.2" required >
+                            <label class="form-check-label" for="p5-2">Tidak tahu</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p5" id="p5-3" value="0.4" required>
+                            <label class="form-check-label" for="p5-3">Mungkin</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p5" id="p5-4"  value="0.6" required>
+                            <label class="form-check-label" for="p5-4">Kemungkinan Besar</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p5" id="p5-5" value="0.8" required>
+                            <label class="form-check-label" for="p5-5">Hampir pasti</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p5"  id="p5-6" value="1" required>
+                            <label class="form-check-label" for="p5-6">Pasti</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="container user-skrining p-5 my-5 shadow-sm">
+                <div class=" mt-2 p-4 text-black rounded">
+                    <div class="row mb-3 mt-3">
+                        <p class="col-form-label">6. Apakah Anda Berkeringat di malam hari tanpa melakukan aktivitas?</p>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p6" id="p6-1" value="0" required>
+                            <label class="form-check-label" for="p6-1">Tidak</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p6" id="p6-2" value="0.2" required >
+                            <label class="form-check-label" for="p6-2">Tidak tahu</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p6" id="p6-3" value="0.4" required>
+                            <label class="form-check-label" for="p6-3">Mungkin</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p6" id="p6-4"  value="0.6" required>
+                            <label class="form-check-label" for="p6-4">Kemungkinan Besar</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p6" id="p6-5" value="0.8" required>
+                            <label class="form-check-label" for="p6-5">Hampir pasti</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p6"  id="p6-6" value="1" required>
+                            <label class="form-check-label" for="p6-6">Pasti</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="container user-skrining p-5 my-5 shadow-sm">
+                <div class=" mt-2 p-4 text-black rounded">
+                    <div class="row mb-3 mt-3">
+                        <p class="col-form-label">7. Apakah Anda mengalami Sesak napas ?</p>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p7" id="p7-1" value="0" required>
+                            <label class="form-check-label" for="p7-1">Tidak</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p7" id="p7-2" value="0.2" required >
+                            <label class="form-check-label" for="p7-2">Tidak tahu</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p7" id="p7-3" value="0.4" required>
+                            <label class="form-check-label" for="p7-3">Mungkin</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p7" id="p7-4"  value="0.6" required>
+                            <label class="form-check-label" for="p7-4">Kemungkinan Besar</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p7" id="p7-5" value="0.8" required>
+                            <label class="form-check-label" for="p7-5">Hampir pasti</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p7"  id="p7-6" value="1" required>
+                            <label class="form-check-label" for="p7-6">Pasti</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="container user-skrining p-5 my-5 shadow-sm">
+                <div class=" mt-2 p-4 text-black rounded">
+                    <div class="row mb-3 mt-3">
+                        <p class="col-form-label">8. Apakah Anda mengalami Nyeri pada dada ?</p>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p8" id="p8-1" value="0" required>
+                            <label class="form-check-label" for="p8-1">Tidak</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p8" id="p8-2" value="0.2" required >
+                            <label class="form-check-label" for="p8-2">Tidak tahu</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p8" id="p8-3" value="0.4" required>
+                            <label class="form-check-label" for="p8-3">Mungkin</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p8" id="p8-4"  value="0.6" required>
+                            <label class="form-check-label" for="p8-4">Kemungkinan Besar</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p8" id="p8-5" value="0.8" required>
+                            <label class="form-check-label" for="p8-5">Hampir pasti</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p8"  id="p8-6" value="1" required>
+                            <label class="form-check-label" for="p8-6">Pasti</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="container user-skrining p-5 my-5 shadow-sm">
+                <div class=" mt-2 p-4 text-black rounded">
+                    <div class="row mb-3 mt-3">
+                        <p class="col-form-label">9. Apakah Anda merasa kehilangan nafsu makan?</p>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p9" id="p9-1" value="0" required>
+                            <label class="form-check-label" for="p9-1">Tidak</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p9" id="p9-2" value="0.2" required >
+                            <label class="form-check-label" for="p9-2">Tidak tahu</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p9" id="p9-3" value="0.4" required>
+                            <label class="form-check-label" for="p9-3">Mungkin</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p9" id="p9-4"  value="0.6" required>
+                            <label class="form-check-label" for="p9-4">Kemungkinan Besar</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p9" id="p9-5" value="0.8" required>
+                            <label class="form-check-label" for="p9-5">Hampir pasti</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p9"  id="p9-6" value="1" required>
+                            <label class="form-check-label" for="p9-6">Pasti</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="container user-skrining p-5 my-5 shadow-sm">
+                <div class=" mt-2 p-4 text-black rounded">
+                    <div class="row mb-3 mt-3">
+                        <p class="col-form-label">10. Apakah Anda mengalami pembengkakan kelenjar getah bening di leher atau area lain?</p>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p10" id="p10-1" value="0" required>
+                            <label class="form-check-label" for="p10-1">Tidak</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p10" id="p10-2" value="0.2" required >
+                            <label class="form-check-label" for="p10-2">Tidak tahu</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p10" id="p10-3" value="0.4" required>
+                            <label class="form-check-label" for="p10-3">Mungkin</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p10" id="p10-4"  value="0.6" required>
+                            <label class="form-check-label" for="p10-4">Kemungkinan Besar</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p10" id="p10-5" value="0.8" required>
+                            <label class="form-check-label" for="p10-5">Hampir pasti</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p10"  id="p10-6" value="1" required>
+                            <label class="form-check-label" for="p10-6">Pasti</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="container user-skrining p-5 my-5 shadow-sm">
+                <div class=" mt-2 p-4 text-black rounded">
+                    <div class="row mb-3 mt-3">
+                        <p class="col-form-label">11. Apakah Anda pernah kontak dengan penderita TB?</p>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p11" id="p11-1" value="0" required>
+                            <label class="form-check-label" for="p11-1">Tidak</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p11" id="p11-2" value="0.2" required >
+                            <label class="form-check-label" for="p11-2">Tidak tahu</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p11" id="p11-3" value="0.4" required>
+                            <label class="form-check-label" for="p11-3">Mungkin</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p11" id="p11-4"  value="0.6" required>
+                            <label class="form-check-label" for="p11-4">Kemungkinan Besar</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p11" id="p11-5" value="0.8" required>
+                            <label class="form-check-label" for="p11-5">Hampir pasti</label>
+                        </div>
+                        <div class="col form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="p11"  id="p11-6" value="1" required>
+                            <label class="form-check-label" for="p11-6">Pasti</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <button type="submit" class="btn btn-lanjutkan">Proses</button>
+        </div>
+    </form>
+</div>
+<%- include('../../master/footer') %>

@@ -1,0 +1,191 @@
+body{
+    background-color: white;
+}
+.navbar{
+    display:flex;
+    background-color: #F8B500;
+    box-shadow: 0px 1px 15px 0px #000;
+}
+.nav-link{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.info-skrining{
+    background-color: #F8B500;
+    border-radius: 2cm;
+}
+.top{
+    margin-top: 100px;
+}
+.form-check-input{
+    width: 23px;
+    height: 23px;
+}
+.user-skrining{
+    background-color: #FFE4A7;
+    border-radius: 1cm;
+}
+.btn-lanjutkan{
+    background-color: #F8B500;
+    color: black;
+    margin-left:auto;
+    margin-right: auto;
+    align-items: center; 
+    width: 15%;
+    padding: 10px;
+}
+.btn-skrining{
+    background-color: white;
+    color: black;
+    margin-left:auto;
+    margin-right: auto;
+    align-items: center; 
+    width: 25%;
+    padding: 10px;
+}
+.content {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+form{
+    margin-bottom: 50px;
+}
+h1{
+    text-align: center;
+}
+#judul-skrining{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 20px;
+}
+li{
+    font-size: 20px;
+}
+#header-user{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+form{
+    font-size: 20px;
+}
+.welcome-pict{
+    width: 50%;
+    align-items: center;
+}
+.paru-pict{
+    width: 60%;
+    align-items: center;
+}
+.bagian-a {
+    background-color: #F8B500;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+.banner {
+    padding-left: 100px;
+}
+.btn-homeskrining{
+    background-color: white;
+    color: black;
+    margin-left:auto;
+    margin-right: auto;
+    align-items: center; 
+    width: 50%;
+    padding: 10px;
+}
+.bagian-b {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.h-bagian2 {
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.gap{
+    width: 20px;
+    padding: 3px;
+}
+.merah { 
+    background-color: #d3756b;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+
+}
+.two {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    
+    width: 150px;
+    height: 150px;
+}
+
+.col-3 {
+    position: relative;
+}
+.icon { 
+    padding-top: 30px;
+    width: 60%;
+}
+.col-icon {
+    width: fit-content;
+}
+.bagian-c {
+    background-color: #F8B500;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.deskripsi{
+    white-space: pre-wrap;
+    line-height: 1.5;
+    align-items: center;
+}
+.bagian-d {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.bagian-e {
+    background-color: #F8B500;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.gejala-desc{
+    background-color: #d3756b;
+    margin-left: 100px;
+    align-items: center;
+}
+.deskripsi-gejala{
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+}
+.batuk-pict {
+    width: 50%;
+}
+.btn-homeskrining2{
+    background-color: white;
+    color: black;
+    margin-left:auto;
+    margin-right: auto;
+    align-items: center; 
+    width: 20%;
+    padding: 10px;
+}
+.hasil-skrining{
+    background-color: #d3756b;
+    border-radius: 10px;
+}

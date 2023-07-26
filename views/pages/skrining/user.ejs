@@ -1,0 +1,31 @@
+<%- include('../../master/header') %>
+<%- include('../../master/navbar') %>
+    margin-top: 100px;
+<div class="top">
+    <h1 id="header-user">Form Data Diri</h1>
+    <% if (messages.error) { %>
+        <div class="alert alert-danger" role="alert"><%- messages.error %></div>
+        <% } %>
+    <form action="/skrininguser" method="post" >
+        <div class="container user-skrining p-5 my-5 shadow-sm">
+            <div class=" mt-2 p-4 text-black rounded">
+                <div class="row mb-3 mt-3">
+                    <label for="nama"  class="col-form-label col-sm-2">Nama Lengkap  </label>
+                    <div class="col-sm-10">
+                        <input type="text" name="nama" id="nama" class="form-control form-control-lg" value="<%= nama %>" placeholder="Nama Lengkap Anda" required>
+                    </div>
+                </div> <br> 
+                <div class="row mb-3 mt-3">
+                    <label for="tanggal_lahir" class="col-form-label col-sm-2">Tanggal Lahir  </label>
+                    <div class="col-sm-10">
+                        <input type="date" name="tanggal_lahir" id="tanggal_lahir" class="form-control form-control-lg" value="<%= tanggal_lahir %>" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <button type="submit" class="btn btn-lanjutkan">Lanjutkan</button>
+        </div>
+    </form>
+</div>
+<%- include('../../master/footer') %>

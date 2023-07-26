@@ -1,0 +1,66 @@
+<%- include('../../master/header') %>
+<%- include('../../master/navbar') %>
+<div class="top">
+    <h1 class="pt-3" id="judul-skrining">Hasil Skrining</h1>
+    <div class="container hasil-skrining p-5 my-5 shadow-sm">
+        <div class="content mt-4 text-black rounded"> 
+            <div class="row">
+                <div class="col bg-light rounded-3">
+                    <div class="row-6 p-3 pt-5"><h5>Nama : <%= nama %> </h5></div>
+                    <div class="row-6 p-3 pb-4"><h5>Tanggal Lahir : <%= tanggal_lahir %> </h5></div>
+                </div>
+                <div class="col-2 gap"></div>
+                <div class="col bg-light rounded-3">
+                    <div class="row">
+                        <h5 class="p-4 pb-2">Hasil skrining menunjukkan bahwa Anda memiliki kemungkinan terdiagnosa penyakit TB sebesar:</h5>
+                    </div>
+                    <div class="row p-3 pb-4">
+                        <div class="col text-center">
+                            <h2 class="fw-bold"><%= diagnosa %> %</h2>
+                        </div>
+                        <div class="col text-center">
+                            <h3><%= title %> </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4 pb-4">
+                <div class="col bg-light rounded-3">
+                    <div class="row p-4 pb-0">
+                        <div class="col"><h5 class="fw-bold">Hasil lainnya : </h5></div>
+                        <div class="col"><h5><%= hasilParu %>% TB Paru</h5></div>
+                        <div class="col"><h5><%= hasilPleuritis %>% TB Pleuritis</h5></div>
+                        <div class="col"><h5><%= hasilLimfa %>% TB Limfadenitis</h5></div>
+                    </div>
+                    <div class="row p-4 pt-2 pb-0">
+                        <h5 class="fw-bold">Saran : </h5>
+                    </div>
+                    <div class="row p-4 pt-2">
+                        <h5><%= saran %></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col bg-light rounded-3 text-center pt-4 pb-4">
+                    <div class="row p-4 pt-0 pb-0 border-bottom border-top border-3">
+                        <div class="col-2 border-end pt-2 pb-2"><h5 class="fw-bold">No</h5></div>
+                        <div class="col-5 border-end pt-2 pb-2"><h5>Gejala</h5></div>
+                        <div class="col-5 pt-2 pb-2"><h5>Jawaban</h5></div>
+                    </div>
+                    <% for(let i = 0; i<= 10; i++) {%>  
+                    <div class="row p-4 pt-0 pb-0 border-bottom border-3">
+                        <div class="col-2 border-end pt-2 pb-2"><h5><%= (i+1) %></h5></div>
+                        <div class="col-5 border-end pt-2 pb-2"><h5><%= gejala[i] %></h5></div>
+                        <div class="col-5 pt-2 pb-2"><h5><%= nilai_user[i] %></h5></div>
+                    </div>
+                    <% }%>
+                </div>
+            </div>
+        
+        <div class="center">
+            <a type="button" class="btn btn-skrining center-block" href="/unduhhasil">Unduh Hasil</a>
+        </div>
+        </div>
+    </div>
+</div>
+<%- include('../../master/footer') %>
