@@ -293,7 +293,7 @@ module.exports ={
                             let showsaran = '';
                             
                             if(hasilMax == hasilParu) {
-                                if(hasilParu < 75){
+                                if(hasilParu < 95){
                                     diagnosa = 0;
                                     title = 'Bukan TB';
                                     showsaran = saran[0];
@@ -303,7 +303,7 @@ module.exports ={
                                     showsaran= saran[1];
                                 }
                             } else if (hasilMax == hasilPleuritis){
-                                if(hasilPleuritis < 75){
+                                if(hasilPleuritis < 95){
                                     diagnosa = 0;
                                     title = 'Bukan TB';
                                     showsaran = saran[0];
@@ -313,7 +313,7 @@ module.exports ={
                                     showsaran= saran[2];
                                 }
                             } else if (hasilMax == hasilLimfa){
-                                if(hasilLimfa < 75){
+                                if(hasilLimfa < 95){
                                     diagnosa = 0;
                                     title = 'Bukan TB';
                                     showsaran = saran[0];
@@ -358,8 +358,13 @@ module.exports ={
             let userId = value[0].id_user;
             let nama = value[0].nama;
             let tanggal_lahir = value[0].tanggal_lahir;
+            // function addMonths(date, months) {
+            //     date.setMonth(date.getMonth() + months);
+
+            //     return date;
+            // }
+            let bulan = (tanggal_lahir.getMonth()+1);
             let tahun = tanggal_lahir.getFullYear();
-            let bulan = tanggal_lahir.getMonth();
             let tanggal = tanggal_lahir.getDate();
             let ttl = tanggal + " - " + bulan + " - "+ tahun;
 
@@ -441,7 +446,12 @@ module.exports ={
                             hasilLimfa = value[0].hasil_tblimfadenitis;
                             let date = value[0].created_at;
                             let tahun = date.getFullYear();
-                            let bulan = date.getMonth();
+                            // function addMonths(date, months) {
+                            //     date.setMonth(date.getMonth() + months);
+
+                            //     return date;
+                            // }
+                            let bulan = (date.getMonth()+1);
                             let tanggal = date.getDate();
                             let created = tanggal + " - " + bulan + " - "+ tahun;
 
@@ -452,7 +462,7 @@ module.exports ={
                             let showsaran = '';
                             
                             if(hasilMax == hasilParu) {
-                                if(hasilParu < 50){
+                                if(hasilParu < 95){
                                     diagnosa = 0;
                                     title = 'Bukan TB';
                                     showsaran = saran[0];
@@ -462,7 +472,7 @@ module.exports ={
                                     showsaran= saran[1];
                                 }
                             } else if (hasilMax == hasilPleuritis){
-                                if(hasilPleuritis < 50){
+                                if(hasilPleuritis < 95){
                                     diagnosa = 0;
                                     title = 'Bukan TB';
                                     showsaran = saran[0];
@@ -472,7 +482,7 @@ module.exports ={
                                     showsaran= saran[2];
                                 }
                             } else if (hasilMax == hasilLimfa){
-                                if(hasilLimfa < 50){
+                                if(hasilLimfa < 95){
                                     diagnosa = 0;
                                     title = 'Bukan TB';
                                     showsaran = saran[0];
