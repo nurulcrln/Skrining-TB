@@ -232,7 +232,7 @@ module.exports ={
                     if (value[i].nilai_user == 0){
                         nilai_user[i] = 'Tidak';
                     } else if (value[i].nilai_user == 0.2){
-                        nilai_user[i] = 'Tidak Tahu';
+                        nilai_user[i] = 'Kemungkinan Kecil';
                     } else if (value[i].nilai_user == 0.4){
                         nilai_user[i] = 'Mungkin';
                     } else if (value[i].nilai_user == 0.6){
@@ -386,7 +386,7 @@ module.exports ={
                     if (value[i].nilai_user == 0){
                         nilai_user[i] = 'Tidak';
                     } else if (value[i].nilai_user == 0.2){
-                        nilai_user[i] = 'Tidak Tahu';
+                        nilai_user[i] = 'Kemungkinan Kecil';
                     } else if (value[i].nilai_user == 0.4){
                         nilai_user[i] = 'Mungkin';
                     } else if (value[i].nilai_user == 0.6){
